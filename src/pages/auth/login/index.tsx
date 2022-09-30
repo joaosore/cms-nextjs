@@ -1,16 +1,24 @@
 import { GetServerSideProps } from 'next';
 
 import Head from 'next/head';
+import { FormLogin } from '../../../components/FormLogin';
 
-export default function Home() {
+export default function Login() {
   return (
     <>
       <Head>
-        <title>Início</title>
+        <title>Login</title>
       </Head>
+      <main>
+        <div className='content'>
+          <FormLogin />
+        </div>
+        <div className='img'></div>
+      </main>
     </>
   );
 }
+
 
 export const getServerSideProps: GetServerSideProps = async () => {
 

@@ -2,15 +2,16 @@ import { GetServerSideProps } from 'next';
 
 import Head from 'next/head';
 
-export default function Home() {
+export default function Register() {
   return (
     <>
       <Head>
-        <title>Início</title>
+        <title>Register</title>
       </Head>
     </>
   );
 }
+
 
 export const getServerSideProps: GetServerSideProps = async () => {
 
